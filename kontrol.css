@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background-image: url("https://i.gifer.com/SS6V.gif");
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 500px){
+  nav{
+    padding: 5px 30px;
+  }
+    section .k2{
+        flex-direction: column;
+    }
+  nav ul li.items{
+    width: 100%;
+    display: flex;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after {
+      opacity: 0;
+  }
+  .section{
+      display: flex;
+      flex-direction: column;
+  }
+  .row{
+      flex-direction: column;
+  }
+}
+.k1{
+  height: 50%;
+ text-align: center;
+  position: center;
+  margin: 10px;
+  color: white;
+  align-content: center;
+}
+p{
+  text-align: center;
+}
+body{
+  background-color: #34120b;
+}
+
+.k2{
+    display: flex;
+    flex-direction: column;
+  height: 50%;
+ text-align: center;
+  position: center;
+  margin: 10px;
+  color: white;
+  align-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  margin: 15px;
+}
+.row img{
+    max-height: 350px;
+  margin: 10px;
+}
+
+h2{
+  color: #cc971c;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+ .card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Ограничение ширины */
+  font-family: sans-serif;
+  margin: 20px;
+}
+ .card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Ограничение ширины */
+  font-family: sans-serif;
+  margin: 20px;
+
+}
+ .card3{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Ограничение ширины */
+  font-family: sans-serif;
+  margin: 20px;
+
+}
+ .card4{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Ограничение ширины */
+  font-family: sans-serif;
+  margin: 20px;
+
+}
+ .card5{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* Ограничение ширины */
+  font-family: sans-serif;
+  margin: 20px;
+
+}
+ img {
+     width: 100%;
+
+
+}
+ h3 {
+  color: #ad8d1c;
+}
+ p {
+  padding: 4px;
+  font-size: 14px;
+  color: #ffffff;
+}
+ .price {
+  color: #d32f2f;
+  font-size: 18px;
+}
+ .card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: #d70000;
+  background-color: #f44336;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col-sm-9{
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+}
+.k3{
+  height: 50%;
+ text-align: center;
+  position: center;
+  margin: 10px;
+  color: white;
+  align-content: center;
+}
+.text{
+    background-color: #cc971c;
+    opacity: 1;
+    border-radius: 25px 30px 35px 30px;
+}
+.name{
+    background-color: slategrey;
+    opacity: 1;
+    border-radius: 25px 30px 35px 30px;
+}
+.reviews{
+    background-color: black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#form1{
+    flex: content;
+    flex-direction: column;
+    height: 100%;
+ text-align: center;
+  position: center;
+  margin: 50px;
+  color: white;
+  align-content: center;
+}
+
+
